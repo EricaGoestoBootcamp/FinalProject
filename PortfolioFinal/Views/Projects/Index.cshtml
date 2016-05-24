@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PortfolioFinal.Models.Project>
+
+@{
+    ViewBag.Title = "Projects";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<!-- header -->
+            @Html.DisplayNameFor(model => model.ProjectName)
+
+            @Html.DisplayNameFor(model => model.ProjectDescription)
+ 
+            @Html.DisplayNameFor(model => model.GitHubLink)
+ 
+            @Html.DisplayNameFor(model => model.ProjectScreenshot)
+  
+            @Html.DisplayNameFor(model => model.ProjectImagePath)
+
+<!-- loop to list  projects -->
+<ul>
+@foreach (var item in Model) {
+    <li>
+   
+            @Html.DisplayFor(modelItem => item.ProjectName)
+
+            @Html.DisplayFor(modelItem => item.ProjectDescription)
+  
+            @Html.DisplayFor(modelItem => item.GitHubLink)
+  
+            @Html.DisplayFor(modelItem => item.ProjectScreenshot)
+ 
+            @Html.DisplayFor(modelItem => item.ProjectImagePath)
+ 
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectID }) <br />
+            @Html.ActionLink("Details", "Details", new { id=item.ProjectID })   <br />
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectID })
+  </li>
+ 
+}
+</ul>
+
+
