@@ -44,8 +44,9 @@
                        class="fa fa-external-link-square link" aria-hidden="true" target="_blank">Go</a>
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.CreditID, @class = "link" }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.CreditID, @class = "link" })
+                    <!-- at-class added to pull in the link style from my stylesheets -->
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CreditID }, new { @class = "link" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CreditID }, new { @class = "link" })
                 </td>
             </tr>
         }
