@@ -1,50 +1,54 @@
-﻿@model IEnumerable<PortfolioFinal.Models.Credit>
+﻿<div class="container">
+    @model IEnumerable<PortfolioFinal.Models.Credit>
 
-@{
-    ViewBag.Title = "Credits";
-}
+    @{
+        ViewBag.Title = "Credits";
+    }
 
-<h2>Index</h2>
+    <h2>Credits</h2>
+    <p>The tools and resources used to construct this project.</p>
+    <p>
+        @Html.ActionLink("Create New", "Create", null, new { @class = "link" })
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsedIn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.URL)
+            </th>
+            <th></th>
+        </tr>
 
-<p>
-    @Html.ActionLink("Create New", "Create", null, new { @class = "link" })
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CompanyName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UsedIn)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.URL)
-        </th>
-        <th></th>
-    </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UsedIn)
+                </td>
+                <td>
+                    <a href="@Html.DisplayFor(modelItem => item.URL)"
+                       class="fa fa-external-link-square link" aria-hidden="true" target="_blank">Go</a>
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CreditID, @class = "link" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CreditID, @class = "link" })
+                </td>
+            </tr>
+        }
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CompanyName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UsedIn)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.URL)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CreditID, @class = "link" }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CreditID, @class = "link" })
-        </td>
-    </tr>
-}
-
-</table>
+    </table>
+</div>
