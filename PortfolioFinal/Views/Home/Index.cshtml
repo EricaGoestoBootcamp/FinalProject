@@ -1,31 +1,102 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿<div class="container">
+@{
+    ViewBag.Title = "Erica Sommer - Portfolio";
 }
 
+<!-- header - basically the jumbotron - target #1 for improvement -->
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Erica Sommer</h1>
+    <p>WCCI 2016 Spring Full-time cohort final project</p>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+<!-- CSS sheet switcher -->
+<div class="ColorScheme">
+<p>Choose a color scheme: 
+<button id="GranpasArmchair"  href="?theme=StyleSheet1" title="Granpa's armchair" style="color:#753A48"> Grandpa's Armchair </button> | 
+
+<button id="GreenTheme" href="?theme=StyleSheet2" title="green" style="color:#216653"> Down By the Sea </button> | 
+
+<button id="GrayTheme" href="?theme=StyleSheet3" title="gray" style="color:#222222"> Gray (mostly) </button> | 
+
+<button id="BlueTheme" href="?theme=StyleSheet4" title="blue" style="color:#6D9293"> 90's Motel </button>
+    </p>
 </div>
+<!-- box grid -->
+<div class="col-md-3 col-xs-6 bg1">
+<a href="../Projects/"><h2>Projects</h2>
+    <p>
+        View a selection of projects created during WCCI Spring 2016 coding bootcamp.
+    </p>
+    <p></p>
+</a>
+</div>
+
+<div class="col-md-3 col-xs-6 bg2 ">
+<h2>@Html.ActionLink("About Me", "About")</h2>
+    <p></p>
+    
+</div>
+<div class="col-md-3 col-xs-6 bg3">
+    <h2>Contact Me</h2>
+    <p><a href="https://www.linkedin.com/in/ericaasommer" class="fa fa-linkedin-square fa-3x" aria-hidden="true"></a> </p> 
+    <p><a href="mailto:erica.sommer@att.net?Subject=Portfolio%inquiry" target="_top" class="fa fa-3x fa-envelope" aria-hidden="true"></a></p>
+</div>
+
+<div class="col-md-3 col-xs-6 bg4">
+    <h2>SignalR Chat module</h2>
+    <p>A chat client demo using SignalR's ability to redistribute information quickly. </p>
+    <p></p>
+</div>
+
+<div class="col-md-3 col-xs-6 bg4">
+    <h2>Checkout app</h2>
+    <p>Placeholder...</p>
+    <p></p>
+</div>
+
+<div class="col-md-3  col-xs-6 bg3">
+    <h2>cccccccc</h2>
+    <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+    <p></p>
+</div>
+
+<div class="col-md-3  col-xs-6 bg5">
+    <h2>ddddddddd</h2>
+    <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+    <p></p>
+</div>
+
+<div class="col-md-3  col-xs-6 bg1">
+    <h2>eeeeeeeee</h2>
+    <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+    <p></p>
+</div>
+
+<div class="col-md-3  col-xs-6 bg5">
+    <h2>ffffffff</h2>
+    <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+    <p></p>
+</div>
+
+<div class="col-md-3  col-xs-6 bg4">
+    <h2>ggggggggggg</h2>
+    <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+    <p></p>
+</div>
+
+<div class="col-md-3  col-xs-6 bg1">
+    <h2>Credits</h2>
+    <p>Resources used to create this website</p>
+    <p></p>
+</div>
+
+<div class="col-md-3  col-xs-6 bg3">
+    <h2>To Do</h2>
+    <p>Roadmap for this portfolio's evolution.</p>
+    <p></p>
+</div>
+ 
+  
+</div>
+
+
