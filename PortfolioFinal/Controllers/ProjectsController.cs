@@ -20,7 +20,7 @@ namespace PortfolioFinal.Controllers
             return View(db.Projects.ToList());
         }
 
-        // GET: Projects/Details/5
+      /*  // GET: Projects/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -33,7 +33,7 @@ namespace PortfolioFinal.Controllers
                 return HttpNotFound();
             }
             return View(project);
-        }
+        } */
 
         // GET: Projects/Create
         public ActionResult Create()

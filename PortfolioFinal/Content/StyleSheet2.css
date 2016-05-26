@@ -23,12 +23,12 @@ h3 {
 }
 
 #footerText {
-    font-size:small;
+    font-size: small;
     color: darkgray;
 }
 
 .ProjectDisplay {
-    list-style-type: none
+    list-style-type: none;
 }
 
 .thumbnail {
@@ -37,55 +37,82 @@ h3 {
 }
 
 .caption {
-    font-size:large;
+    font-size: large;
     color: darkgrey;
     text-align: center;
 }
 
 
- .col-md-3 {
+.col-md-3 {
     min-height: 200px;
 }
 
- .bg1 {
+.bg1 {
     background-color: #216653;
     color: #d0E0D3;
-        
- }
+}
 
- .bg2 {
+.bg2 {
     background-color: #3E927A;
     color: #d0E0D3;
- }
+}
 
-  .bg3 {
+.bg3 {
     background-color: #73BAA1;
     color: #d0E0D3;
- }
+}
 
-   .bg4 {
+.bg4 {
     background-color: #3E927A;
     color: #d0E0D3;
- }
+}
 
-     .bg5 {
+.bg5 {
     background-color: #B8D9C0;
     color: #216653;
- }
-
-     a:link  {
-         color: #d0E0D3;
-         text-decoration: none;
-     }
-
-     a:hover  {
-         color: wheat;
-         text-decoration: none;
-     }
-
-     a:visited {
-         color: lightgrey;
-     }
+}
 
 
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
 
+a:hover {
+    color: wheat;
+    text-decoration: none;
+}
+
+a:visited, a:active {
+    color: lightgrey;
+}
+
+.link:link {
+    color: #2F2F2F;
+}
+
+.link:visited, .link:active {
+    color: forestgreen;
+}
+
+.link:hover {
+    color: darkseagreen;
+}
+
+.AboutMe {
+    padding-top: 40px;
+}
+
+.col-md-6 {
+    padding: 20px;
+}
+
+.ProjectDisplay {
+    list-style-type: none;
+    background-color: #216653;
+    color: #d0E0D3;
+    min-height: 450px;
+    margin-right: 3px;
+    padding-top: 8px;
+    margin-bottom: 3px;
+}

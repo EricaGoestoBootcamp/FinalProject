@@ -19,12 +19,12 @@
     <nav class="navbar navbar-default navbar-right navbar-fixed-top">
         <div class="container">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
+                <li>@Html.ActionLink("About Me", "About", "Home")</li>
                 <li><a href="#">Chat</a></li>
                 <li><a href="#">Checkout</a></li>
-                <li><a href="#">Credits</a></li>
+                <li>@Html.ActionLink("Project Credits", "Index", "Credits")</li>
                 <li><a href="#">To Do</a></li>
             </ul>
         </div>

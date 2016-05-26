@@ -24,7 +24,6 @@ h3 {
 }
 
 
-
 .thumbnail {
     max-height: 300px;
     max-width: 300px;
@@ -80,6 +79,10 @@ a:visited, a:active {
     color: lightgrey;
 }
 
+.link:link {
+    color: #2F2F2F;
+}
+
 .link:visited, .link:active {
     color: forestgreen;
 }
@@ -103,6 +106,5 @@ a:visited, a:active {
     min-height: 450px;
     margin-right: 3px;
     padding-top: 8px;
-    margin-bottom:3px;
+    margin-bottom: 3px;
 }
-

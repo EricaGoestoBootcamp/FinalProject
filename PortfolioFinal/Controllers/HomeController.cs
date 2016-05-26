@@ -19,11 +19,11 @@ namespace PortfolioFinal.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+      /*  public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
-        }
+        }  */
     }
 }

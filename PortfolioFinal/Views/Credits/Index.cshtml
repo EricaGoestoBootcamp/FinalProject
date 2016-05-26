@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<PortfolioFinal.Models.Credit>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Credits";
 }
 
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", null, new { @class = "link" })
 </p>
 <table class="table">
     <tr>
@@ -41,9 +41,8 @@
             @Html.DisplayFor(modelItem => item.URL)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CreditID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CreditID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CreditID })
+            @Html.ActionLink("Edit", "Edit", new { id=item.CreditID, @class = "link" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CreditID, @class = "link" })
         </td>
     </tr>
 }
